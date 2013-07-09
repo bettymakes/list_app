@@ -1,0 +1,14 @@
+<h1>Edit me!</h2>
+  <%= form_for @item do |f| %>
+    <%= f.label "task" %>
+    <%= f.text_field "task" %> 
+    <br>
+    <%= f.label "rating" %>
+    <%= f.text_field "rating" %>
+    <br>
+    <%= f.label "category" %>
+    <%= f.text_field "category" %>
+    <br>
+
+    <%= f.submit "Add To List" %>
+  <% end %>

@@ -2,7 +2,13 @@
 
 <%= link_to "Make a new posting", new_list_path %>
 <br>
+<br>
 <% @items.each do |item| %>
-<%= item[:task] %><br>
+<%= item[:task] %> 
+<%= link_to "Edit", edit_list_path(item) %>
+
+<%= link_to "Delete", @item, :confirm => "Are you sure you want to delete this picture?", :method => :delete %>
+
+<br><br>
 <% end %>
 

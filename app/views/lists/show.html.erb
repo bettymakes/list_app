@@ -1,0 +1,12 @@
+<h4>Task:</h4>
+<h3 style="color: slategrey;"><%= @item[:task] %></h3>
+<br>
+<br>
+Woops! I meant something else. I have to <%= link_to "edit item", edit_list_path %>.
+<br>
+Looks good! Bring me back to my <%= link_to "list", lists_path %>.
+<br>
+<br>
+<small>
+<%= link_to "Delete", @item, :confirm => "Are you sure you want to delete this picture?", :method => :delete %>
+</small>

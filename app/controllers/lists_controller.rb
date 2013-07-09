@@ -21,12 +21,22 @@ class ListsController < ActionController::Base
   end
 
   def edit
+    @item = List.find(params[:id])
   end
 
   def update
+    @item = List.find(params[:id])
+      if @item.update_attributes(params[:list])
+        redirect_to list_path(@item)
+      else
+        render :new
+      end
   end
 
   def destroy
+    @item = List.find(params[:id])
+    @item.destroy
+    redirect_to lists_path
   end
   
 end
