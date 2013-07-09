@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  task: MyString
+  rating: 1
+  category: MyString
+
+two:
+  task: MyString
+  rating: 1
+  category: MyString
