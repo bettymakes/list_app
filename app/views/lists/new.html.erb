@@ -1,0 +1,15 @@
+<h1>New List Item</h1>
+<%= form_tag("/lists", method: "POST") do %>
+  <%= label_tag(:task, "Task:") %>
+  <%= text_field_tag(:task) %> 
+  <br>
+  <%= label_tag(:rating, "Rate Urgency:") %>
+  <%= text_field_tag(:rating) %>
+  <br>
+  <%= label_tag(:category, "Category:") %>
+  <%= text_field_tag(:category) %>
+  <br>
+
+  <%= submit_tag("Add To List") %>
+
+<% end %>
