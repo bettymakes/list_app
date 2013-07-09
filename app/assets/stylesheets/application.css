@@ -11,3 +11,12 @@
  *= require_self
  *= require_tree .
  */
+/*.item_container {
+  background-color: blue;
+  width: 500px;
+  height: 100px;
+}*/
+
+body {
+	background-color: black;
+}

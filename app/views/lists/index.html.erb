@@ -1,2 +1,8 @@
 <h1>My Awesome List of To-Do's</h1>
 
+<%= link_to "Make a new posting", new_list_path %>
+<br>
+<% @items.each do |item| %>
+<%= item[:task] %><br>
+<% end %>
+
